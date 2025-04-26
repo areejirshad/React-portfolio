@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+/* Fix for hash-span positioning */
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+/* Gradient backgrounds */
+.black-gradient {
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.violet-gradient {
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+}
+
+.green-pink-gradient {
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+/* Gradient text styles */
+.orange-text-gradient,
+.green-text-gradient,
+.blue-text-gradient,
+.pink-text-gradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
+
+.orange-text-gradient {
+  background: linear-gradient(to top, #f12711, #f5af19);
+}
+
+.green-text-gradient {
+  background: linear-gradient(to top, #11998e, #38ef7d);
+}
+
+.blue-text-gradient {
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
+}
+
+.pink-text-gradient {
+  background: linear-gradient(to top, #ec008c, #fc6767);
+}
+
+/* Canvas Loader */
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+
+/* Spinner Animation */
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #ffffff,
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.5),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.7),
+      1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.swiper-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(1px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-slide span {
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(27, 116, 2, 0.8);
+  padding: 7px 18px;
+  display: inline-block;
+  border-radius: 0 20px 20px 0px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  padding: 25px 45px 0 25px;
+}
+
+.swiper-slide p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 35px 25px;
+}
+
+.swiper-slide .icon {
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  margin-right: 7px;
+} */
+/* Swiper Container */
+
+
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Swiper Slider */
+.mySwiper {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+}
+
+.swiper-slide {
+  width: 320px !important;
+  height: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  
+  transition: all 0.5s ease;
+  filter: blur(2px); /* Default blur for non-active slides */
+  transform: scale(0.9); /* Default smaller size */
+}
+/* Active slide */
+.swiper-slide-active {
+  filter: blur(0px); /* Remove blur */
+  transform: scale(1.1) translateX(50px);
+}
+
+/* Slide Content */
+.swiper-slide-content {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.swiper-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* Prevents overly tall images */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/* Overlay */
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  color: white;
+  border-radius: 0 0 15px 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* Change to flex-start for left alignment */
+}
+
+/* Description Text */
+.description {
+  font-size: 14px;
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+/* Category Tags */
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.domestic {
+  background: #00796b;
+}
+
+.subtropical {
+  background: #007bff;
+}
+
+.history {
+  background: #e65100;
+}
+
+.Mayans {
+  background: #8e44ad;
+}
+
+.native {
+  background: #27ae60;
+}
+
+/* Text */
+h2 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+/* Icon */
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+  background: white !important;
+  width: 10px;
+  height: 10px;
+  bottom: 5px !important;
+}
+  
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
+/* Banner slider component */
+/* Container that forces full viewport width and fixed height */
+/* Container for the banner slider */

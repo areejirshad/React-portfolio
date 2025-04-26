@@ -1,0 +1,38 @@
+/* Banner slider container */
+.banner-slider {
+  width: 100vw;       /* Full viewport width */
+  height: 600px;       /* Use full height of container (or adjust as needed) */
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Ensure the Swiper instance fills the banner container and has rounded borders with shadow */
+.banner-slider .mySwiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px; /* Smooth round borders */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  overflow: hidden;  /* Clip child elements to the rounded border */
+}
+
+/* Override global swiper-slide styles for the banner slider */
+.banner-slider .swiper-slide {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit !important; /* Inherit border radius from .mySwiper */
+  filter: none !important;           /* Remove any blur or effects */
+  transform: none !important;        /* Remove scaling effects */
+}
+
+/* Ensure images fill the slide area and also respect the border radius */
+.banner-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
