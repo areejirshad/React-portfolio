@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 // Import custom CSS for the slider
 
-import wordpressdesighn from "../assets/wordpress & shopify projects/wordpress desighn (1).PNG";
+import wordpressdesighn from "../assets/wordpress & shopify projects/wordpress desighn (1).png";
 import webdesighn from "../assets/wordpress & shopify projects/wordpress and shopify (2).png";
 
 const BannerSlider = () => {
