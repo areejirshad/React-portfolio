@@ -4859,3 +4859,350 @@ body {
     border-radius: 20px;
   }
 }
+
+/* Final polish pass: one-page polish requests */
+.site-nav .brand-lockup {
+  min-width: 215px !important;
+  gap: 12px !important;
+}
+
+.site-nav .brand-lockup .brand-mark--signature,
+.site-nav .brand-lockup .brand-mark--clean {
+  position: relative !important;
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(214, 173, 98, 0.56) !important;
+  border-radius: 16px !important;
+  color: #08090d !important;
+  background:
+    linear-gradient(135deg, rgba(255, 237, 190, 0.98), rgba(214, 173, 98, 0.96)) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 16px 34px rgba(214, 173, 98, 0.16) !important;
+}
+
+.site-nav .brand-lockup .brand-mark--signature::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(8, 9, 13, 0.2);
+  border-radius: 12px;
+  transform: rotate(10deg);
+}
+
+.site-nav .brand-lockup .brand-mark--signature b {
+  position: relative;
+  z-index: 2;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.site-nav .brand-lockup .brand-mark--signature em {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  z-index: 3;
+  display: inline-grid;
+  place-items: center;
+  min-width: 22px;
+  height: 13px;
+  border-radius: 6px;
+  color: #f7dc9a;
+  background: rgba(8, 9, 13, 0.82);
+  font-family: Inter, sans-serif;
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.site-nav .brand-lockup .brand-text--clean {
+  display: grid !important;
+  gap: 3px !important;
+}
+
+.site-nav .brand-lockup .brand-text--clean strong {
+  font-size: 15px !important;
+}
+
+.site-nav .brand-lockup .brand-text--clean small {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: rgba(248, 243, 236, 0.54) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 9px !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.11em !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+}
+
+.home-hero--refined .home-hero__copy h1.hero-rotating-title--js {
+  width: min(900px, 100%) !important;
+  min-height: 58px !important;
+  color: var(--text) !important;
+  font-size: clamp(30px, 4.05vw, 52px) !important;
+  line-height: 1.02 !important;
+  white-space: nowrap !important;
+}
+
+.hero-rotating-title--js span {
+  white-space: nowrap !important;
+}
+
+.hero-rotating-title--js i {
+  height: 0.82em !important;
+}
+
+.wordpress-showcase .section-intro {
+  max-width: 720px !important;
+}
+
+.wordpress-showcase .section-intro h2 {
+  max-width: 680px !important;
+}
+
+.work-marquee {
+  padding-block: 34px !important;
+  margin-block: -16px !important;
+}
+
+.work-track {
+  gap: 20px !important;
+  margin-bottom: 10px !important;
+}
+
+.work-track:last-child {
+  margin-bottom: 0 !important;
+}
+
+.work-tile {
+  width: min(36vw, 540px) !important;
+  min-width: 405px !important;
+  height: 395px !important;
+  display: grid !important;
+  place-items: center !important;
+}
+
+.work-tile img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+}
+
+.work-tile:hover img {
+  transform: translateY(-5px) scale(1.01) !important;
+}
+
+.featured-card--compact .featured-card__media {
+  height: 335px !important;
+  min-height: 335px !important;
+  padding: 10px !important;
+  display: grid !important;
+  place-items: center !important;
+}
+
+.featured-card--compact .featured-card__media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+.featured-card--compact:hover .featured-card__media img {
+  transform: scale(1.012) !important;
+}
+
+@media (min-width: 901px) {
+  .story-panel--visual.section-block {
+    padding-top: 72px !important;
+    padding-bottom: 72px !important;
+    margin-top: 42px !important;
+    margin-bottom: 46px !important;
+    align-items: start !important;
+  }
+
+  .story-visual--image {
+    position: sticky !important;
+    top: calc((100vh - 365px) / 2) !important;
+    height: 365px !important;
+    max-width: 600px !important;
+    align-self: start !important;
+    padding: 8px !important;
+  }
+
+  .story-visual--image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+
+  .story-panel__steps {
+    gap: 26vh !important;
+    padding-top: 0 !important;
+    padding-bottom: 4vh !important;
+  }
+
+  .story-step {
+    min-height: 270px !important;
+    padding: 20px 24px !important;
+  }
+
+  .story-step:first-child {
+    margin-top: 0 !important;
+  }
+
+  .story-step:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 1020px) {
+  .home-hero--refined .home-hero__copy h1.hero-rotating-title--js {
+    font-size: clamp(26px, 6.2vw, 42px) !important;
+  }
+
+  .featured-card--compact .featured-card__media {
+    height: 285px !important;
+    min-height: 285px !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-nav .brand-lockup {
+    min-width: 46px !important;
+  }
+
+  .site-nav .brand-lockup .brand-mark--signature {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    border-radius: 14px !important;
+  }
+
+  .home-hero--refined .home-hero__copy h1.hero-rotating-title--js {
+    min-height: 84px !important;
+    height: auto !important;
+    white-space: normal !important;
+  }
+
+  .hero-rotating-title--js span {
+    white-space: normal !important;
+  }
+
+  .work-marquee {
+    padding-block: 20px !important;
+    margin-block: 0 !important;
+  }
+
+  .work-track {
+    gap: 14px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .work-tile {
+    width: 90vw !important;
+    min-width: 290px !important;
+    height: 300px !important;
+  }
+}
+
+/* Mobile hero tech stack correction */
+@media (max-width: 900px) {
+  .home-hero--refined .hero-portrait,
+  .hero-portrait {
+    min-height: 0 !important;
+    height: auto !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  .home-hero--refined .hero-tech-orbit,
+  .hero-tech-orbit {
+    position: relative !important;
+    inset: auto !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 9px !important;
+    margin: 6px auto 0 !important;
+    padding: 8px !important;
+    border-radius: 999px !important;
+    background: rgba(6, 7, 13, 0.42) !important;
+  }
+
+  .home-hero--refined .orbit-chip,
+  .orbit-chip {
+    width: 43px !important;
+    height: 43px !important;
+    min-width: 43px !important;
+    transform: none !important;
+    position: relative !important;
+    inset: auto !important;
+  }
+
+  .home-hero--refined .orbit-chip .tech-icon,
+  .orbit-chip .tech-icon {
+    font-size: 17px !important;
+  }
+}
+
+/* Compact final identity mark */
+.site-nav .brand-lockup {
+  min-width: 150px !important;
+  gap: 10px !important;
+}
+
+.site-nav .brand-lockup .brand-mark--signature {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  border-radius: 12px !important;
+}
+
+.site-nav .brand-lockup .brand-mark--signature::before,
+.site-nav .brand-lockup .brand-mark--signature em {
+  display: none !important;
+  content: none !important;
+}
+
+.site-nav .brand-lockup .brand-mark--signature b {
+  font-size: 16px !important;
+  letter-spacing: -0.04em !important;
+}
+
+.site-nav .brand-lockup .brand-text--clean {
+  display: block !important;
+}
+
+.site-nav .brand-lockup .brand-text--clean strong {
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+
+.site-nav .brand-lockup .brand-text--clean small {
+  display: none !important;
+}

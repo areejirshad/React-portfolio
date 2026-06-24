@@ -26,7 +26,9 @@ export default function SiteFrame({ children }) {
       <div className="soft-grid" />
       <nav className="site-nav">
         <Link className="brand-lockup" to="/" aria-label="Areej Irshad portfolio home">
-          <span className="brand-mark brand-mark--clean"><b>A</b><em>&lt;/&gt;</em></span>
+          <span className="brand-mark brand-mark--signature" aria-hidden="true">
+            <b>AI</b>
+          </span>
           <span className="brand-text brand-text--clean">
             <strong>Areej Irshad</strong>
           </span>

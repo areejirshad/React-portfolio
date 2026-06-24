@@ -1,48 +1,45 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Areej Irshad - Full Stack MERN Developer, WordPress Developer & Designer</title>
-<meta name="description" content="Resume of Areej Irshad, Full Stack MERN Developer, WordPress Developer, React/Next.js developer, Shopify and web designer with real-world LMS, SaaS, ecommerce and business website projects." />
+<meta name="description" content="One-page resume of Areej Irshad: MERN stack developer, WordPress developer and designer, Shopify/web design, LMS platforms, dashboards, payments and production websites." />
 <style>
-  @page { size: A4; margin: 12mm; }
+  @page { size: A4; margin: 8mm; }
   * { box-sizing: border-box; }
-  body { margin: 0; color: #172033; font-family: Arial, Helvetica, sans-serif; font-size: 10.3px; line-height: 1.43; background: #fff; }
-  a { color: #155da8; text-decoration: none; }
+  body { margin: 0; color: #172033; background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 8.8px; line-height: 1.28; }
+  a { color: #165da8; text-decoration: none; }
   h1, h2, h3, p { margin: 0; }
-  .page { max-width: 820px; margin: 0 auto; }
-  .header { display: grid; grid-template-columns: 1.3fr .9fr; gap: 16px; padding-bottom: 10px; border-bottom: 2px solid #172033; }
-  h1 { font-size: 27px; line-height: 1; letter-spacing: .2px; color: #0d1424; }
-  .title { margin-top: 5px; color: #b2842c; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .65px; }
-  .summary { margin-top: 8px; max-width: 530px; color: #344055; font-size: 10.8px; }
-  .contact { text-align: right; display: grid; gap: 3px; align-content: start; font-size: 9.6px; color: #344055; }
-  .section { margin-top: 12px; break-inside: avoid; }
-  .section h2 { display: flex; align-items: center; gap: 8px; color: #0d1424; font-size: 12px; letter-spacing: .75px; text-transform: uppercase; margin-bottom: 7px; }
-  .section h2::after { content: ''; height: 1px; flex: 1; background: #d9e0ea; }
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 14px; }
-  .skill-row b { color: #0d1424; }
-  .chips { display: flex; flex-wrap: wrap; gap: 5px; }
-  .chip { padding: 3px 7px; border-radius: 999px; background: #f3f6fa; color: #263349; border: 1px solid #dde5ef; font-size: 9px; font-weight: 700; }
-  .project { padding: 8px 0; border-bottom: 1px solid #e7ecf2; break-inside: avoid; }
+  .page { max-width: 780px; margin: 0 auto; }
+  .header { display: grid; grid-template-columns: 1.25fr .95fr; gap: 12px; padding-bottom: 6px; border-bottom: 2px solid #172033; }
+  h1 { color: #0d1424; font-size: 24px; line-height: .95; }
+  .title { margin-top: 4px; color: #b2842c; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .45px; }
+  .summary { margin-top: 5px; max-width: 500px; color: #344055; font-size: 9.2px; }
+  .contact { display: grid; gap: 2px; align-content: start; text-align: right; color: #344055; font-size: 8.3px; }
+  .section { margin-top: 7px; break-inside: avoid; }
+  .section h2 { display: flex; align-items: center; gap: 7px; margin-bottom: 4px; color: #0d1424; font-size: 10px; letter-spacing: .65px; text-transform: uppercase; }
+  .section h2::after { content: ""; height: 1px; flex: 1; background: #dbe2ec; }
+  .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px 10px; }
+  .skill b, .project h3, .role h3 { color: #0d1424; }
+  .project { padding: 5px 0; border-bottom: 1px solid #e6ebf2; break-inside: avoid; }
   .project:last-child { border-bottom: 0; }
-  .project-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
-  .project h3 { font-size: 11.4px; color: #0d1424; }
-  .project .meta { color: #b2842c; font-weight: 800; font-size: 9.3px; white-space: nowrap; }
-  ul { margin: 5px 0 0; padding-left: 15px; }
-  li { margin: 2px 0; }
-  .links { margin-top: 4px; font-size: 9.2px; color: #44516a; }
-  .small-list { display: grid; gap: 5px; }
-  .compact { font-size: 9.6px; color: #344055; }
-  .role { padding: 8px 0; border-bottom: 1px solid #e7ecf2; }
+  .project-head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+  .project h3 { font-size: 10px; }
+  .meta { color: #b2842c; font-size: 8px; font-weight: 900; white-space: nowrap; }
+  ul { margin: 3px 0 0; padding-left: 13px; }
+  li { margin: 1px 0; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .web-list { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 10px; color: #344055; }
+  .role { padding: 4px 0; border-bottom: 1px solid #e6ebf2; }
   .role:last-child { border-bottom: 0; }
-  .role h3 { font-size: 11.2px; color: #0d1424; }
-  .role span { color: #61708a; font-size: 9.4px; }
-  .certs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; }
-  .cert { padding: 8px; background: #f8fafc; border: 1px solid #e3e9f1; border-radius: 8px; font-weight: 800; color: #172033; }
-  .footer { margin-top: 12px; padding-top: 8px; border-top: 1px solid #d9e0ea; font-size: 9px; color: #66728a; text-align: center; }
-  @media print { .page { max-width: none; } a { color: #155da8; } }
+  .role h3 { font-size: 9.8px; }
+  .role span { display: block; color: #62708a; font-size: 8px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 3px; }
+  .chip { padding: 2px 5px; border: 1px solid #dde5ef; border-radius: 999px; background: #f5f7fb; color: #263349; font-size: 7.6px; font-weight: 800; }
+  .certs { display: grid; gap: 3px; color: #344055; }
+  .footer { margin-top: 6px; padding-top: 5px; border-top: 1px solid #dbe2ec; color: #65738a; font-size: 7.8px; text-align: center; }
+  @media print { .page { max-width: none; } }
 </style>
 </head>
 <body>
@@ -51,92 +48,85 @@
     <div>
       <h1>Areej Irshad</h1>
       <p class="title">Full Stack MERN Developer | WordPress Developer & Designer | Shopify/Web Design</p>
-      <p class="summary">Full-stack web developer with strong WordPress expertise and growing specialization in MERN/Next.js applications. I build business websites, ecommerce experiences, LMS platforms, dashboards, payment flows, custom APIs, admin systems, and production-ready user interfaces from idea, branding, content flow, design, development, deployment, and maintenance.</p>
+      <p class="summary">Developer and designer building production websites and full-stack apps for education, business, ecommerce, SaaS, dashboards and custom ideas. Strong WordPress expertise with real MERN/Next.js LMS platforms, payments, role dashboards, APIs, databases, UI/UX, deployment and maintenance.</p>
     </div>
     <div class="contact">
-      <span>Email: <a href="mailto:irshadzakia21@gmail.com">irshadzakia21@gmail.com</a></span>
-      <span>LinkedIn: <a href="https://www.linkedin.com/in/areej-irshad-1044492b4/">linkedin.com/in/areej-irshad-1044492b4</a></span>
-      <span>GitHub: <a href="https://github.com/areejirshad">github.com/areejirshad</a></span>
-      <span>Portfolio: React/Next.js, MERN, WordPress & Shopify projects</span>
-      <span>Availability: Remote / freelance / full-time / contract</span>
+      <span><b>Email:</b> <a href="mailto:irshadzakia21@gmail.com">irshadzakia21@gmail.com</a></span>
+      <span><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/areej-irshad-1044492b4/">linkedin.com/in/areej-irshad-1044492b4</a></span>
+      <span><b>GitHub:</b> <a href="https://github.com/areejirshad">github.com/areejirshad</a></span>
+      <span><b>Availability:</b> Remote, full-time, part-time, freelance/contract</span>
     </div>
   </header>
 
   <section class="section">
     <h2>Core Skills</h2>
     <div class="skills">
-      <div class="skill-row"><b>Frontend:</b> React.js, Next.js, JavaScript ES6+, TypeScript, HTML5, CSS3, Tailwind CSS, responsive UI, GSAP/Framer Motion style animation</div>
-      <div class="skill-row"><b>Backend:</b> Node.js, Express.js, REST APIs, authentication, role-based access, admin workflows, payment logic, email workflows</div>
-      <div class="skill-row"><b>Databases:</b> MySQL, MongoDB, Prisma schema design, relational data models, orders, students, reports, exports</div>
-      <div class="skill-row"><b>WordPress:</b> Elementor, WPBakery, Tutor LMS, custom CSS, PHP/JS customization, forms, business websites, performance-ready pages</div>
-      <div class="skill-row"><b>Payments & Integrations:</b> Stripe, PayPal, bank/manual review, coupons, subscriptions, Zoom, Google Drive, EmailJS/Resend-style workflows</div>
-      <div class="skill-row"><b>Design & Launch:</b> UI/UX, branding, banners, content formatting, mockups, deployment fixes, hosting setup, maintenance</div>
+      <div class="skill"><b>Frontend:</b> React, Next.js, JavaScript, TypeScript, Tailwind, responsive UI, animations.</div>
+      <div class="skill"><b>Backend:</b> Node.js, Express, REST APIs, auth, roles, admin workflows, email logic.</div>
+      <div class="skill"><b>Databases:</b> MySQL, MongoDB, Prisma, relational schemas, orders, reports, exports.</div>
+      <div class="skill"><b>WordPress:</b> Elementor, WPBakery, Tutor LMS, custom CSS, PHP/JS, forms, business sites.</div>
+      <div class="skill"><b>Payments:</b> Stripe, PayPal, bank/manual review, coupons, pricing, subscriptions.</div>
+      <div class="skill"><b>Design/Launch:</b> UI/UX, branding, banners, content flow, deployment, hosting, maintenance.</div>
     </div>
   </section>
 
   <section class="section">
     <h2>Flagship Full-Stack Projects</h2>
     <article class="project">
-      <div class="project-head"><h3>Gen-Mumins Learning Platform</h3><span class="meta">Next.js | React | MySQL | Payments | LMS</span></div>
+      <div class="project-head"><h3>Gen-Mumins Learning Platform</h3><span class="meta">Next.js | React | MySQL | LMS | Payments</span></div>
       <ul>
-        <li>Built a full-stack online institute platform with public website, registration, parent/student/teacher/admin dashboards, curriculum, live sessions, recordings, feedback, reports, and admin operations.</li>
-        <li>Implemented advanced registration logic including parent accounts, multiple child profiles, programme bundles, coupons, regional pricing, scholarship/manual flows, Stripe/PayPal/manual payment handling, and enrollment fulfillment.</li>
-        <li>Developed operational dashboards for parents, teachers, and admins, including live Zoom scheduling, Drive recording workflows, curriculum builder, student access, orders, exports, and teacher reporting.</li>
+        <li>Built a revenue-generating online institute platform with public website, registration, parent/student/teacher/admin dashboards, curriculum, live sessions, recordings, feedback, reporting and operations.</li>
+        <li>Implemented parent accounts, multi-child profiles, bundle pricing, coupons, regional/manual flows, Stripe/PayPal payments, enrollment access, Zoom sessions, Drive recordings, exports and admin controls.</li>
       </ul>
-      <p class="links">Live: <a href="https://genmumin.com/">https://genmumin.com/</a></p>
+      <p>Live: <a href="https://genmumin.com/">https://genmumin.com/</a></p>
     </article>
     <article class="project">
       <div class="project-head"><h3>TGA Awakening Platform</h3><span class="meta">Next.js | TypeScript | Prisma | Stripe/PayPal</span></div>
       <ul>
-        <li>Built a full-stack Islamic education platform with animated public website, Seerah course registration, payments, student dashboard, scholarship/fee-waiver workflow, donations, and admin dashboard.</li>
-        <li>Created registration, pricing, coupon, monthly/full-course plans, manual review, JazzCash/bank transfer support, email notifications, and admin controls for orders, students, payments, waivers, and donations.</li>
-        <li>Handled UI/UX, frontend, backend APIs, database schema, payments, dashboard systems, deployment setup, and production fixes.</li>
+        <li>Developed a full-stack Islamic education platform with animated public pages, Seerah registration, payments, student dashboard, scholarships/fee waivers, donations and admin dashboard.</li>
+        <li>Owned UI/UX, frontend, backend APIs, database schema, coupons, monthly/full plans, manual review, email notifications, admin order/student/payment workflows and deployment setup.</li>
       </ul>
-      <p class="links">Live: <a href="https://www.tga-awakening.com/">https://www.tga-awakening.com/</a></p>
+      <p>Live: <a href="https://www.tga-awakening.com/">https://www.tga-awakening.com/</a></p>
     </article>
   </section>
 
   <section class="section">
-    <h2>Selected WordPress, Shopify & Web Design Projects</h2>
-    <div class="grid-2 compact">
-      <div class="small-list">
-        <p><b>The Pallet Factory</b> - premium pallet company website with enhanced images, service/product layouts, banners and inquiry flow. <a href="http://thepalletfactory.ca/">Live</a></p>
-        <p><b>Darul Quran WasSunnah</b> - education website rebuilt with WPBakery, custom CSS, admissions, donation pages and structured content. <a href="https://dqws.us/">Live</a></p>
-        <p><b>Geo Pallet Ltd.</b> - full redesign with product catalogue, interactive sections, advanced pallet inquiry forms, PHP/JS logic. <a href="http://geopalletltd.com/">Live</a></p>
-        <p><b>West Coast Pallet</b> - pallet company redesign with page sections, service layouts, banner design and conversion-focused pages. <a href="http://westcoastpalletltd.com/">Live</a></p>
-      </div>
-      <div class="small-list">
-        <p><b>Crown Languages</b> - LMS-style language website with course enrollments, page templates, emails, and teacher registration. <a href="https://crownlanguages.com/">Live</a></p>
-        <p><b>Eid Badshah</b> - full website from scratch including branding, logo direction, thumbnails, image treatment and content flow. <a href="https://eidbadshah.com/">Live</a></p>
-        <p><b>AsmaTech / Sigma Evolution</b> - dark luxury agency websites presenting services, business positioning, branding and lead generation.</p>
-        <p><b>Business Portfolio Websites</b> - Shopify/WordPress ecommerce and business layouts with Elementor, product sections and visual customization.</p>
-      </div>
+    <h2>Selected WordPress, Shopify & Web Design Work</h2>
+    <div class="web-list">
+      <p><b>The Pallet Factory</b> - premium pallet website, product/service layouts, banners, inquiry flow. <a href="http://thepalletfactory.ca/">Live</a></p>
+      <p><b>Darul Quran WasSunnah</b> - education site with WPBakery, custom CSS, admissions, donations. <a href="https://dqws.us/">Live</a></p>
+      <p><b>Geo Pallet Ltd.</b> - redesign, product catalogue, custom CSS, PHP/JS inquiry forms. <a href="http://geopalletltd.com/">Live</a></p>
+      <p><b>West Coast Pallet</b> - business redesign, page sections, banners and conversion layout. <a href="http://westcoastpalletltd.com/">Live</a></p>
+      <p><b>Crown Languages</b> - LMS-style courses, templates, emails and teacher registration. <a href="https://crownlanguages.com/">Live</a></p>
+      <p><b>Eid Badshah</b> - full website, branding direction, content flow, visuals and launch. <a href="https://eidbadshah.com/">Live</a></p>
+      <p><b>AsmaTech / Sigma Evolution</b> - dark luxury agency websites for services, positioning and lead generation.</p>
+      <p><b>Business Portfolio Websites</b> - Shopify/WordPress ecommerce layouts, Elementor builds and visual customization.</p>
     </div>
   </section>
 
   <section class="section grid-2">
     <div>
-      <h2>Experience & Strengths</h2>
-      <div class="role"><h3>Full Stack / MERN Developer</h3><span>Real-world education, business and dashboard applications</span><ul><li>Builds frontend, backend, database, payment and admin workflows with production-minded structure.</li><li>Works with AI-assisted productivity while maintaining ownership of implementation, testing and deployment fixes.</li></ul></div>
-      <div class="role"><h3>WordPress Developer & Designer</h3><span>Business websites, LMS websites and custom WordPress solutions</span><ul><li>Creates responsive WordPress sites with Elementor/WPBakery, custom CSS, PHP/JS logic, forms, banners and content formatting.</li></ul></div>
-      <div class="role"><h3>Frontend Developer Intern - 24 Loops</h3><span>Frontend projects, React practice and real-world UI work</span><ul><li>Built and refined frontend interfaces while strengthening React, component patterns and responsive design.</li></ul></div>
+      <h2>Experience</h2>
+      <div class="role"><h3>Full Stack / MERN Developer</h3><span>Education, business, SaaS-style dashboards and custom apps</span><p>Builds frontend, backend, database, payments, dashboards and deployment-ready systems with clear product thinking.</p></div>
+      <div class="role"><h3>WordPress Developer & Designer</h3><span>Business websites, LMS websites and custom WordPress solutions</span><p>Creates responsive sites with Elementor/WPBakery, custom CSS, PHP/JS, forms, banners and polished content structure.</p></div>
+      <div class="role"><h3>Frontend Developer Intern - 24 Loops</h3><span>React/front-end project practice and real-world UI work</span><p>Strengthened React, responsive layouts, component structure and frontend delivery.</p></div>
     </div>
     <div>
-      <h2>Technical Keywords</h2>
+      <h2>Keywords</h2>
       <div class="chips">
-        <span class="chip">MERN Stack</span><span class="chip">Next.js</span><span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">Tailwind CSS</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Prisma</span><span class="chip">REST APIs</span><span class="chip">Stripe</span><span class="chip">PayPal</span><span class="chip">WordPress</span><span class="chip">Elementor</span><span class="chip">WPBakery</span><span class="chip">Tutor LMS</span><span class="chip">Shopify</span><span class="chip">UI/UX</span><span class="chip">Responsive Design</span><span class="chip">Deployment</span>
+        <span class="chip">MERN</span><span class="chip">Next.js</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">Tailwind</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Prisma</span><span class="chip">REST APIs</span><span class="chip">Stripe</span><span class="chip">PayPal</span><span class="chip">WordPress</span><span class="chip">Elementor</span><span class="chip">WPBakery</span><span class="chip">Tutor LMS</span><span class="chip">Shopify</span><span class="chip">UI/UX</span><span class="chip">Deployment</span>
       </div>
       <section class="section">
         <h2>Certifications</h2>
         <div class="certs">
-          <div class="cert">Advanced React / Next.js Course</div>
-          <div class="cert">Advanced Node.js Course</div>
-          <div class="cert">Frontend, WordPress & Web Design Practice Portfolio</div>
+          <span>Advanced React / Next.js Course</span>
+          <span>Advanced Node.js Course</span>
+          <span>Frontend, WordPress & Web Design Practice Portfolio</span>
         </div>
       </section>
       <section class="section">
         <h2>Value Proposition</h2>
-        <p class="compact">Clients can bring a rough business or product idea, and I can help turn it into a structured website or application: branding direction, banners, content formatting, UI/UX, frontend, backend logic, database, dashboards, payment flow, deployment and maintenance.</p>
+        <p>Bring the idea; I can shape the brand direction, content, UI/UX, frontend, backend logic, dashboards, payments, deployment and maintenance into one live web solution.</p>
       </section>
     </div>
   </section>
