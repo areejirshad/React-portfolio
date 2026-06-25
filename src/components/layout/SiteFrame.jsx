@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 import CursorAura from "../visuals/CursorAura";
 import ParticleField from "../visuals/ParticleField";
@@ -16,6 +16,8 @@ const socialLinks = [
   ["LinkedIn", "https://www.linkedin.com/in/areej-irshad-1044492b4/", faLinkedinIn],
   ["GitHub", "https://github.com/areejirshad", faGithub],
 ];
+
+const whatsappHref = "https://wa.me/923181602388?text=Assalamu%20alaikum%20Areej%2C%20I%20visited%20your%20portfolio%20and%20want%20guidance%20about%20a%20website%20or%20web%20app.";
 
 export default function SiteFrame({ children }) {
   return (
@@ -48,6 +50,17 @@ export default function SiteFrame({ children }) {
           <a className="nav-pill" href="/#contact">Start</a>
         </div>
       </nav>
+      <a
+        className="whatsapp-float"
+        href={whatsappHref}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Ask a question on WhatsApp"
+        title="Need guidance? Ask on WhatsApp"
+      >
+        <FontAwesomeIcon icon={faWhatsapp} />
+        <span>Need guidance?</span>
+      </a>
       {children}
     </div>
   );
