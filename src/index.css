@@ -5194,11 +5194,11 @@ body {
   .story-visual--image {
     position: sticky !important;
     top: 94px !important;
-    height: min(440px, calc(100vh - 136px)) !important;
     max-width: 640px !important;
     align-self: start !important;
     padding: 0 !important;
     aspect-ratio: 16 / 10 !important;
+    height: auto !important;
   }
 
   .story-visual--image img {
@@ -5215,7 +5215,8 @@ body {
 @media (min-width: 901px) {
   .story-visual--image {
     top: 92px !important;
-    height: min(455px, calc(100vh - 128px)) !important;
+    height: auto !important;
+    aspect-ratio: 16 / 10 !important;
     padding: 0 !important;
   }
 
