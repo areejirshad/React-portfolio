@@ -5187,23 +5187,41 @@ body {
 
 @media (min-width: 901px) {
   .story-panel--visual.section-block {
-    padding-top: 58px !important;
-    padding-bottom: 58px !important;
+    padding-top: 42px !important;
+    padding-bottom: 42px !important;
   }
 
   .story-visual--image {
     position: sticky !important;
-    top: clamp(92px, calc((100vh - min(470px, 68vh)) / 2), 126px) !important;
-    height: min(470px, 68vh) !important;
+    top: 94px !important;
+    height: min(440px, calc(100vh - 136px)) !important;
     max-width: 640px !important;
     align-self: start !important;
+    padding: 0 !important;
+    aspect-ratio: 16 / 10 !important;
   }
 
   .story-visual--image img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: contain !important;
+    object-fit: cover !important;
     object-position: center !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+}
+
+/* Final correction: story image should fill the frame; spacing is outside the card only. */
+@media (min-width: 901px) {
+  .story-visual--image {
+    top: 92px !important;
+    height: min(455px, calc(100vh - 128px)) !important;
+    padding: 0 !important;
+  }
+
+  .story-visual--image img {
+    object-fit: cover !important;
+    border-radius: 0 !important;
   }
 }
 
