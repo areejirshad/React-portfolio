@@ -8,7 +8,7 @@ export const journey = [
       "Learned how real clients think about clarity, trust, conversion, and fast launch.",
       "Started noticing where no-code tools needed deeper developer customization.",
     ],
-    text: "The journey started with WordPress websites, visual design, and practical client pages that needed to look polished and work clearly.",
+    text: "The journey began with polished WordPress websites, visual design, and practical client pages.",
   },
   {
     year: "2024",
@@ -19,7 +19,7 @@ export const journey = [
       "Used custom CSS and JavaScript to push WordPress beyond template limits.",
       "Shifted from only arranging pages to solving how interfaces actually behave.",
     ],
-    text: "JavaScript opened the bridge between design and real interaction, especially for custom WordPress behavior and frontend problem solving.",
+    text: "JavaScript became the bridge between design, interaction, and custom WordPress behavior.",
   },
   {
     year: "2024-25",
@@ -30,7 +30,7 @@ export const journey = [
       "Practiced responsive dashboards, polished sections, and modern product interfaces.",
       "Started thinking in systems instead of single pages: flows, states, data, and roles.",
     ],
-    text: "React turned the design practice into structured app building, with cleaner interfaces and more product-level thinking.",
+    text: "React turned design practice into structured app building and product-level thinking.",
   },
   {
     year: "Now",
@@ -41,7 +41,7 @@ export const journey = [
       "Implemented registrations, multi-child pricing, coupons, subscriptions, reports, and exports.",
       "Delivered revenue-generating systems like TGA and Gen-Mumins while still building WordPress sites.",
     ],
-    text: "The current focus is full-stack delivery: idea, brand, frontend, backend, dashboards, payments, deployment, and maintenance.",
+    text: "Now the focus is full-stack delivery: idea, UI, backend, dashboards, payments, launch, and maintenance.",
   },
 ];
 

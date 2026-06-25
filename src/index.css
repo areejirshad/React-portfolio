@@ -5226,6 +5226,55 @@ body {
   }
 }
 
+/* Story section final positioning: balanced sticky image and shorter centered cards */
+@media (min-width: 901px) {
+  .story-panel--visual.section-block {
+    padding-top: 80px !important;
+    padding-bottom: 70px !important;
+  }
+
+  .story-visual--image {
+    top: clamp(170px, calc((100vh - 322px) / 2), 230px) !important;
+    height: auto !important;
+    aspect-ratio: 16 / 10 !important;
+    padding: 0 !important;
+  }
+
+  .story-panel__steps {
+    padding-top: clamp(170px, calc((100vh - 322px) / 2), 230px) !important;
+    gap: 24vh !important;
+  }
+
+  .story-step {
+    min-height: 235px !important;
+    padding: 18px 22px !important;
+  }
+
+  .story-step:first-child {
+    margin-top: 0 !important;
+  }
+
+  .story-step h3 {
+    margin: 9px 0 8px !important;
+    font-size: clamp(18px, 1.75vw, 22px) !important;
+  }
+
+  .story-step p {
+    margin-bottom: 10px !important;
+    font-size: 13.2px !important;
+    line-height: 1.5 !important;
+  }
+
+  .story-step ul {
+    gap: 6px !important;
+  }
+
+  .story-step li {
+    font-size: 12.4px !important;
+    line-height: 1.38 !important;
+  }
+}
+
 /* Compact final identity mark */
 .site-nav .brand-lockup {
   min-width: 150px !important;
